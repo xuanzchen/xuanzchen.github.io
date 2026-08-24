@@ -9,13 +9,13 @@
     />
     <meta
       name="keywords"
-      content="Xuanzhi Chen, Bio-Babel, iST, bioinformatics software, spatial transcriptomics, machine learning, glioblastoma, Peking University, Stanford"
+      content="Xuanzhi Chen, Bio-Babel, CycLENS, iST, scientific agents, spatial multi-omics, bioinformatics software, computational oncology, Peking University, Stanford"
     />
     <meta name="theme-color" content="#f4f7f5" />
     <meta property="og:title" content="Xuanzhi Chen" />
     <meta
       property="og:description"
-      content="Bioinformatics software, spatial transcriptomics, machine learning, and scientific agents."
+      content="Spatial multi-omics, scientific agents, bioinformatics software, and AI for imaging-based spatial transcriptomics."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://xuanzchen.github.io/" />
@@ -44,7 +44,7 @@
           <p class="eyebrow">Research profile</p>
           <h1>Xuanzhi Chen</h1>
           <p class="role">Bioinformatics Undergraduate</p>
-          <p class="affiliation">Peking University &middot; Stanford Summer Research</p>
+          <p class="affiliation">Peking University &middot; Qiu Lab at Stanford</p>
         </div>
 
         <address class="contact">
@@ -63,6 +63,16 @@
           >
             <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
             <span class="sr-only">LinkedIn</span>
+          </a>
+          <a
+            href="assets/Xuanzhi_Chen_CV.pdf"
+            aria-label="Curriculum Vitae"
+            title="CV"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+            <span class="sr-only">Curriculum Vitae</span>
           </a>
           <button type="button" data-email-action aria-label="Email" title="Email">
             <i class="fa-solid fa-envelope" aria-hidden="true"></i>
@@ -87,8 +97,9 @@
               National School of Development.
             </p>
             <p>
-              I am currently conducting summer research at Stanford, contributing to
-              Bio-Babel and working on upstream processing and end-to-end modeling for iST.
+              During summer 2026, I conducted research in the Qiu Lab at Stanford,
+              working on Bio-Babel and developing agentic and end-to-end approaches
+              for imaging-based spatial transcriptomics.
             </p>
             <p>
               Outside research, I enjoy playing volleyball.
@@ -102,8 +113,8 @@
             <h2 id="interests-heading">Research Interests</h2>
             <ul class="interest-grid" aria-label="Research interests">
               <li>
-                <span>Spatial Transcriptomics</span>
-                <small>multimodal downstream analysis and spatial profiling of tumors</small>
+                <span>Spatial Multi-omics</span>
+                <small>spatial transcriptomics and translatomics, multimodal analysis, and spatial oncology</small>
               </li>
               <li>
                 <span>Scientific Agents</span>
@@ -143,18 +154,17 @@
                   </a>
                 </h3>
                 <p>
-                  STATES simultaneously profiles the spatial transcriptome and translatome,
-                  providing a joint view of RNA abundance and active translation in tissue.
-                  We are optimizing and extending the upstream processing pipeline and using
-                  STATES to investigate the spatial organization of GBM, with ongoing
-                  downstream analyses aimed at revealing tumor features and mechanisms.
+                  STATES jointly profiles the spatial transcriptome and translatome.
+                  We are applying it to investigate GBM spatial organization and translational
+                  regulation through upstream pipeline optimization and downstream multimodal
+                  analysis.
                 </p>
                 <p class="methods">Spatial multi-omics · Spatial oncology · GBM</p>
               </li>
 
               <li class="work-item">
                 <div class="work-meta">
-                  <span class="tag tag-active">Stanford Summer Research</span>
+                  <span class="tag tag-active">Manuscript in preparation</span>
                   <span>Scientific agents · Research software</span>
                 </div>
                 <h3>
@@ -163,13 +173,13 @@
                   </a>
                 </h3>
                 <p>
-                  Bio-Babel combines Agent Build, which reconstructs scientific software
-                  natively across language ecosystems, with Agent Read, which makes packages
-                  discoverable and callable by agents. We used it to rebuild and validate a
-                  Python plotting stack and selected analysis packages from R, and extended
-                  the framework to Python-to-C++ and Python-to-Rust translation.
+                  Bio-Babel is an agentic framework that enables AI agents to understand,
+                  use, and translate scientific software. We contributed across Agent Build
+                  and Agent Read through automated package annotation, Codex integration,
+                  workflow validation, and cross-language extensions. Co-author of the
+                  accompanying manuscript.
                 </p>
-                <p class="methods">Scientific agents · Grammar of Graphics · Single-cell analysis</p>
+                <p class="methods">Scientific agents · Software translation · Research software</p>
               </li>
 
               <li class="work-item">
@@ -177,16 +187,15 @@
                   <span class="tag tag-active">Stanford Summer Research</span>
                   <span>iST · Deep learning</span>
                 </div>
-                <h3>iST End-to-End Model</h3>
+                <h3>CycLENS — End-to-End iST Model</h3>
                 <p>
-                  We are developing an end-to-end model that maps raw fluorescence images
-                  directly to a gene-by-cell matrix through a shared latent space, bypassing
-                  separate registration, image processing, spot detection, decoding, and cell
-                  segmentation stages. By learning these steps jointly, we aim to reduce error
-                  propagation and information loss and generalize across experimental batches,
-                  microscope platforms, and iST technologies.
+                  We are developing CycLENS, a unified model that jointly learns image
+                  alignment, transcript localization, and barcode decoding from raw multiplexed
+                  fluorescence images. By replacing fragmented upstream processing with joint
+                  learning, we aim to reduce error propagation and generalize across experiments,
+                  imaging platforms, and iST technologies.
                 </p>
-                <p class="methods">Deep learning · iST · Vision Transformers · Foundation models</p>
+                <p class="methods">Deep learning · iST · Multimodal learning · Bioimage analysis</p>
               </li>
 
               <li class="work-item">
