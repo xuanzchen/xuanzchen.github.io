@@ -175,6 +175,10 @@ h1 {
   cursor: pointer;
 }
 
+.profile-links .ai-cv {
+  font-size: 1.22rem;
+}
+
 .profile-links a:hover,
 .profile-links button:hover {
   color: var(--accent-strong);
