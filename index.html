@@ -9,7 +9,7 @@
     />
     <meta
       name="keywords"
-      content="Xuanzhi Chen, Bio-Babel, STATES, iST, scientific agents, spatial multi-omics, virtual tissue, AI for biology, bioinformatics software, computational oncology, Peking University, Zeng Lab, Qiu Lab, Stanford"
+      content="Xuanzhi Chen, Bio-Babel, STATES, iST, scientific agents, spatial multi-omics, virtual tissue, AI for biology, bioinformatics software, computational oncology, Peking University, Zeng Lab, Qiu Lab, Stanford, Canchen Technology"
     />
     <meta name="theme-color" content="#f4f7f5" />
     <meta property="og:title" content="Xuanzhi Chen" />
@@ -30,7 +30,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20261020-1" />
     <title>Xuanzhi Chen | Peking University</title>
   </head>
   <body>
@@ -50,11 +50,14 @@
           <p class="eyebrow">Research profile</p>
           <h1>Xuanzhi Chen</h1>
           <p class="role">Bioinformatics Undergraduate</p>
-          <p class="affiliation">Zeng Lab, Peking University &middot; Qiu Lab, Stanford</p>
+          <p class="affiliation">
+            Zeng Lab, Peking University<br />
+            Qiu Lab, Stanford &middot; Canchen Technology
+          </p>
         </div>
 
         <address class="contact">
-          <span>xuanzhichen (at) stu.pku.edu.cn</span>
+          <span>xuanzhichen216 (at) gmail.com</span>
         </address>
 
         <nav class="profile-links" aria-label="External links">
@@ -103,10 +106,12 @@
               School of Development.
             </p>
             <p>
-              At Peking University, I work in the Zeng Lab on spatial multi-omics and
-              GBM, and I am developing an iST upstream processing agent as my undergraduate
-              thesis. Since summer 2026, I have also worked with the Qiu Lab at Stanford,
-              contributing to Bio-Babel and an end-to-end model for iST upstream processing.
+              My research experience includes internships in the Zeng Lab at Peking
+              University, the Qiu Lab at Stanford, and Canchen Technology. Across these
+              roles, I have worked on spatial multi-omics, scientific agents, and
+              computational methods for iST; at Canchen Technology, I am preparing a
+              virtual tissue project. I am also developing an iST upstream processing
+              agent as my undergraduate thesis.
             </p>
             <p>
               Outside research, I enjoy playing volleyball.
@@ -139,8 +144,55 @@
           </div>
         </section>
 
-        <section class="section" aria-labelledby="publications-heading">
+        <section class="section" aria-labelledby="experience-heading">
           <p class="section-index">03</p>
+          <div class="section-body">
+            <h2 id="experience-heading">Research Experience</h2>
+            <ul class="experience-list">
+              <li class="experience-item">
+                <div>
+                  <h3>Zeng Lab</h3>
+                  <p class="experience-place">Peking University</p>
+                </div>
+                <div>
+                  <p class="experience-role">Research Intern</p>
+                  <p class="experience-summary">
+                    Working on STATES-GBM, applying joint spatial transcriptomic and
+                    translatomic profiling to study glioblastoma.
+                  </p>
+                </div>
+              </li>
+              <li class="experience-item">
+                <div>
+                  <h3>Qiu Lab</h3>
+                  <p class="experience-place">Stanford University</p>
+                </div>
+                <div>
+                  <p class="experience-role">Summer Research Intern &middot; Summer 2026</p>
+                  <p class="experience-summary">
+                    Contributed to Bio-Babel and an end-to-end model for iST upstream
+                    processing.
+                  </p>
+                </div>
+              </li>
+              <li class="experience-item">
+                <div>
+                  <h3>Canchen Technology</h3>
+                  <p class="experience-place">Research and Development</p>
+                </div>
+                <div>
+                  <p class="experience-role">Research Intern &middot; Since October 2026</p>
+                  <p class="experience-summary">
+                    Preparing a project on virtual tissue modeling.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="publications-heading">
+          <p class="section-index">04</p>
           <div class="section-body">
             <h2 id="publications-heading">Publications</h2>
             <ol class="work-list">
@@ -165,7 +217,7 @@
         </section>
 
         <section class="section" aria-labelledby="work-heading">
-          <p class="section-index">04</p>
+          <p class="section-index">05</p>
           <div class="section-body">
             <div class="section-heading-row">
               <h2 id="work-heading">Selected Work</h2>
@@ -249,7 +301,7 @@
         </section>
 
         <section class="section closing" aria-labelledby="contact-heading">
-          <p class="section-index">05</p>
+          <p class="section-index">06</p>
           <div class="section-body">
             <h2 id="contact-heading">Contact</h2>
             <p class="lead">
@@ -269,8 +321,8 @@
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
 
-      const emailUser = ["xuanzhi", "chen"].join("");
-      const emailDomain = ["stu", "pku", "edu", "cn"].join(".");
+      const emailUser = ["xuanzhi", "chen", "216"].join("");
+      const emailDomain = ["gmail", "com"].join(".");
       document.querySelectorAll("[data-email-action]").forEach((element) => {
         element.addEventListener("click", () => {
           window.location.href = `mailto:${emailUser}${String.fromCharCode(64)}${emailDomain}`;
@@ -279,4 +331,5 @@
     </script>
   </body>
 </html>
+
 
