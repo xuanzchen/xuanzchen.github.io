@@ -9,7 +9,7 @@
     />
     <meta
       name="keywords"
-      content="Xuanzhi Chen, Bio-Babel, STATES, iST, scientific agents, spatial multi-omics, agentic world models, virtual brain, AI for biology, bioinformatics software, computational oncology, Peking University, Zeng Lab, Qiu Lab, Stanford, Canchen Technology"
+      content="Xuanzhi Chen, Bio-Babel, STATES, iST, scientific agents, spatial multi-omics, agentic world models, virtual tissue, AI for biology, bioinformatics software, computational oncology, Peking University, Zeng Lab, Qiu Lab, Stanford, Canchen Technology"
     />
     <meta name="theme-color" content="#f4f7f5" />
     <meta property="og:title" content="Xuanzhi Chen" />
@@ -101,16 +101,23 @@
           <div class="section-body">
             <h2 id="about-heading">About Me</h2>
             <p>
-              I am an undergraduate in bioinformatics at the School of Life Sciences,
+              I am a senior in bioinformatics at the School of Life Sciences,
               Peking University, pursuing a double degree in economics at the National
               School of Development.
             </p>
             <p>
-              My research experience includes internships at Peking University, Stanford
-              University, and Canchen Technology. Across these roles, I have worked on
-              spatial multi-omics, scientific agents, computational methods for iST, and
-              agentic world modeling for the virtual brain. I am also developing an iST
-              upstream processing agent as my undergraduate thesis.
+              My research focuses on spatial multi-omics, machine learning for biology,
+              and scientific agents. In Hu Zeng's lab at Peking University, I work on
+              imaging-based spatial transcriptomics and translatomics, from image processing
+              to downstream analysis. In Xiaojie Qiu's lab at Stanford, I contributed to
+              Bio-Babel and am training a model for joint molecular and cellular inference
+              from spatial transcriptomics images.
+            </p>
+            <p>
+              I am also developing iST Agent for reliable execution of imaging-based spatial
+              transcriptomics workflows. Since October 2026, I have been a remote research
+              intern at Canchen Technology, mentored by Lei Li, with a focus on agentic
+              world models for virtual tissue.
             </p>
             <p>
               Outside research, I enjoy playing volleyball.
@@ -154,10 +161,11 @@
                   <p class="experience-place">Zeng Lab</p>
                 </div>
                 <div>
-                  <p class="experience-role">Research Intern &middot; Since Summer 2024</p>
+                  <p class="experience-role">Undergraduate Researcher &middot; July 2024&ndash;Present</p>
                   <p class="experience-summary">
-                    Working on STATES-GBM, applying joint spatial transcriptomic and
-                    translatomic profiling to study glioblastoma.
+                    Building and optimizing the STATES upstream pipeline, analyzing
+                    spatial transcription and translation in glioblastoma, and developing
+                    iST Agent for workflow execution.
                   </p>
                 </div>
               </li>
@@ -167,23 +175,23 @@
                   <p class="experience-place">Qiu Lab</p>
                 </div>
                 <div>
-                  <p class="experience-role">Summer Research Intern &middot; Summer 2026</p>
+                  <p class="experience-role">Undergraduate Researcher &middot; June 2026&ndash;Present</p>
                   <p class="experience-summary">
-                    Contributed to Bio-Babel and an end-to-end model for iST upstream
-                    processing.
+                    On-site summer research in June&ndash;August 2026, followed by remote
+                    research. Contributed to Bio-Babel and am developing and training a
+                    model for joint decoding, segmentation, and molecule-to-cell assignment.
                   </p>
                 </div>
               </li>
               <li class="experience-item">
                 <div>
                   <h3>Canchen Technology</h3>
+                  <p class="experience-place">Mentor: Lei Li</p>
                 </div>
                 <div>
-                  <p class="experience-role">Research Intern &middot; Since October 2026</p>
+                  <p class="experience-role">Research Intern &middot; Remote &middot; October 2026&ndash;Present</p>
                   <p class="experience-summary">
-                    Working on an agentic world model for the virtual brain, integrating
-                    multimodal tissue modeling, perturbation prediction, scientific reasoning,
-                    and experiment-driven refinement.
+                    Research focus: agentic world models for virtual tissue.
                   </p>
                 </div>
               </li>
@@ -233,11 +241,13 @@
                 </div>
                 <h3>Spatial Multi-omics Analysis of GBM with STATES</h3>
                 <p>
-                  STATES simultaneously profiles the spatial transcriptome and translatome,
-                  enabling a joint view of RNA abundance and active translation in tissue.
-                  We are optimizing the upstream processing pipeline and conducting downstream
-                  multimodal analyses to investigate the spatial organization and translational
-                  regulation of GBM.
+                  STATES jointly profiles spatial transcriptomes and translatomes. I
+                  benchmarked cell-segmentation methods, integrated 3D Cellpose nuclear
+                  segmentation into ClusterMap, and improved image stitching. The proportion
+                  of seams misaligned by more than 3 pixels fell from 14.2% to 0.3%;
+                  multi-nucleus segments fell from 28.8% to 13&ndash;14% against the same
+                  nuclear reference. My downstream work examines malignant-cell identities,
+                  subtypes, and spatial variation in translation efficiency in glioblastoma.
                 </p>
                 <p class="methods">Spatial multi-omics · Spatial oncology · GBM</p>
               </li>
@@ -252,11 +262,14 @@
                   </a>
                 </h3>
                 <p>
-                  Bio-Babel is an agentic framework for building and reading scientific
-                  software. We developed software annotation and cross-language reconstruction
-                  workflows, evaluated R-to-Python reconstruction through a pancreatic
-                  differentiation case study, and extended the framework to Python-to-C++
-                  and Python-to-Rust.
+                  Bio-Babel reconstructs computational biology software across languages
+                  for use by scientific agents. I built an annotation agent that generates
+                  machine-readable usage contracts for reconstructed packages, extended
+                  coding-agent compatibility, and developed tooling for agent-driven
+                  Python-to-C++ reconstruction. In the pancreatic differentiation case
+                  study, I prepared and annotated the data, reviewed analyses executed by
+                  Bio-Babel's agents, and completed genotype-aware screening and biological
+                  interpretation of reduced maturation signatures under SWI/SNF loss.
                   Code:
                   <a href="https://github.com/Bio-Babel/bio-babel-pancreas">pancreas case study</a>,
                   <a href="https://github.com/Bio-Babel/UMI-tools-cpp">UMI-tools-cpp</a>.
@@ -268,15 +281,15 @@
                 <div class="work-meta">
                   <span class="tag tag-active">Qiu Lab &middot; In progress</span>
                 </div>
-                <h3>End-to-End Model for iST Upstream Processing</h3>
+                <h3>End-to-End Spatial Transcriptomics Modeling</h3>
                 <p>
-                  We are developing an end-to-end model that maps raw multiplexed
-                  fluorescence images directly to a gene-by-cell matrix, bypassing separate
-                  registration, image processing, spot detection, decoding, and cell
-                  segmentation. By learning these stages jointly through a shared latent
-                  space, we aim to reduce error propagation and information loss while
-                  generalizing across experimental batches, imaging platforms, and iST
-                  technologies.
+                  I am developing and training a model on public MERFISH data that couples
+                  molecular localization and barcode decoding with cell segmentation and
+                  molecule-to-cell assignment. It combines RNA fluorescence and cellular
+                  morphology, learning cross-round correspondences without a separate
+                  image-warping stage. The project tests whether sharing evidence across
+                  these interdependent tasks can reduce errors introduced by sequential
+                  processing.
                 </p>
                 <p class="methods">Deep learning · iST · Multimodal learning · Bioimage analysis</p>
               </li>
@@ -285,14 +298,15 @@
                 <div class="work-meta">
                   <span class="tag tag-active">Peking University &middot; Undergraduate thesis</span>
                 </div>
-                <h3>iST Upstream Processing Agent</h3>
+                <h3>iST Agent</h3>
                 <p>
-                  We are developing a scientific agent for iST upstream processing that
-                  automates data organization, quality control, parameter tuning, algorithm
-                  selection, and workflow orchestration. It is designed to help researchers
-                  configure and optimize complex pipelines across technologies and platforms,
-                  including registration, data augmentation, spot detection, decoding, and
-                  cell segmentation.
+                  Inspired by Bio-Babel, I built an agent for reliable execution of
+                  heterogeneous imaging-based spatial transcriptomics workflows. It separates
+                  usage contracts derived from source code from memory of runtime failures
+                  and fixes. I generated contracts for seven pipelines and reproduced one
+                  pipeline's decoding byte for byte. In one comparison, preflight checks
+                  caught a multi-sample configuration defect with memory but missed it
+                  without memory.
                 </p>
                 <p class="methods">Scientific agents · iST · Bioimage processing · Workflow orchestration</p>
               </li>
@@ -300,8 +314,36 @@
           </div>
         </section>
 
-        <section class="section closing" aria-labelledby="contact-heading">
+        <section class="section" aria-labelledby="presentations-honors-heading">
           <p class="section-index">06</p>
+          <div class="section-body">
+            <h2 id="presentations-honors-heading">Presentations &amp; Honors</h2>
+            <ol class="work-list">
+              <li class="work-item">
+                <div class="work-meta">
+                  <span class="tag">Invited oral presentation &middot; October 2026</span>
+                </div>
+                <h3>Bio-Babel</h3>
+                <p>
+                  Annual Symposium of the Peking University Undergraduate Honors
+                  Program in Biology.
+                </p>
+              </li>
+              <li class="work-item">
+                <h3>Honors and Awards</h3>
+                <p>
+                  Academic Excellence Award, Peking University &middot; 2026<br />
+                  Peking University Scholarship &middot; 2025<br />
+                  Peking University Freshmen Scholarship &middot; 2023<br />
+                  Gold Medal, China National Biology Olympiad Final &middot; 2022
+                </p>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="section closing" aria-labelledby="contact-heading">
+          <p class="section-index">07</p>
           <div class="section-body">
             <h2 id="contact-heading">Contact</h2>
             <p class="lead">
@@ -331,6 +373,3 @@
     </script>
   </body>
 </html>
-
-
-
