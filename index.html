@@ -183,8 +183,11 @@
                 <div>
                   <p class="experience-role">Research Intern &middot; Remote &middot; October 2026&ndash;Present</p>
                   <p class="experience-summary">
-                    Exploring agentic virtual tissue models that combine foundation models,
-                    mechanistic dynamics, and LLM reasoning.
+                    Developing a research proposal combining foundation models, mechanistic
+                    models, and LLM agents for tissue perturbation prediction. Proposed feedback
+                    between biological reasoning and quantitative model computation, and outlined
+                    comparisons to evaluate model integration, agent contributions, and iterative
+                    feedback through the journal club <em>Building an Agentic Tissue World Model</em>.
                   </p>
                 </div>
               </li>
@@ -239,8 +242,15 @@
                   segmentation into ClusterMap, and improved image stitching. The proportion
                   of seams misaligned by more than 3 pixels fell from 14.2% to 0.3%;
                   multi-nucleus segments fell from 28.8% to 13&ndash;14% against the same
-                  nuclear reference. My downstream work examines malignant-cell identities,
-                  subtypes, and spatial variation in translation efficiency in glioblastoma.
+                  nuclear reference.
+                </p>
+                <p>
+                  I evaluate segmentation using both image inspection and downstream cell
+                  annotation, using feedback from biological analysis to refine upstream
+                  processing. Fewer multi-nucleus regions alone do not establish better
+                  segmentation, since cell boundaries can also become too small. My downstream
+                  work examines malignant-cell identities, subtypes, and spatial variation
+                  in translation efficiency in glioblastoma.
                 </p>
                 <p class="methods">Spatial multi-omics · Spatial oncology · GBM</p>
               </li>
@@ -293,13 +303,20 @@
                 </div>
                 <h3>iST Agent</h3>
                 <p>
-                  Inspired by Bio-Babel, I built an agent for reliable execution of
-                  heterogeneous imaging-based spatial transcriptomics workflows. It separates
-                  usage contracts derived from source code from memory of runtime failures
-                  and fixes. I generated contracts for seven pipelines and reproduced one
-                  pipeline's decoding byte for byte. In one comparison, preflight checks
-                  caught a multi-sample configuration defect with memory but missed it
-                  without memory.
+                  Inspired by Bio-Babel, I built an agent for imaging-based spatial
+                  transcriptomics that separates source-derived workflow contracts from memory
+                  of execution failures and fixes. On MERlin with public MERFISH data, I
+                  compared source access alone, contracts, and contracts plus memory across
+                  17 tasks and two models. Contracts more than halved failed cluster jobs
+                  for both models tested.
+                </p>
+                <p>
+                  On the test tasks, reviewed memory reduced failed jobs by a further 84%
+                  and token-based model cost by 16% for the smaller model, compared with
+                  contracts alone; task success did not differ significantly. I also found
+                  that unreviewed memory could retain a silent processing failure as a fix
+                  and propagate it to later tasks. I introduced a review stage before
+                  retaining new memories. Evaluation on a second pipeline is ongoing.
                 </p>
                 <p class="methods">Scientific agents · iST · Bioimage processing · Workflow orchestration</p>
               </li>
