@@ -170,8 +170,8 @@
                   <p class="experience-role">Undergraduate Researcher &middot; June 2026&ndash;Present</p>
                   <p class="experience-summary">
                     On-site summer research in June&ndash;August 2026, followed by remote
-                    research. Contributed to Bio-Babel and am developing and training an
-                    iST upstream model for joint decoding, segmentation, and molecule-to-cell assignment.
+                    research. Contributed to Bio-Babel and am developing and training a model
+                    for joint spot-calling, decoding, cell segmentation, and molecule-to-cell assignment.
                   </p>
                 </div>
               </li>
@@ -235,11 +235,12 @@
                 <h3>Spatial Multi-omics Analysis of GBM with STATES</h3>
                 <p>
                   STATES jointly profiles spatial transcriptomes and translatomes. I
-                  benchmarked cell-segmentation methods, integrated 3D Cellpose nuclear
-                  segmentation into ClusterMap, and improved image stitching. The proportion
-                  of seams misaligned by more than 3 pixels fell from 14.2% to 0.3%;
-                  multi-nucleus segments fell from 28.8% to 13&ndash;14% against the same
-                  nuclear reference.
+                  independently developed a joint within- and cross-round image stitching
+                  algorithm, replacing three separate processing paths with a single joint
+                  step; the proportion of within-round seams misaligned by more than 3 pixels
+                  fell from 14.2% to 0.3%. I also benchmarked cell-segmentation methods and
+                  integrated 3D Cellpose nuclear masks into ClusterMap; multi-nucleus
+                  segments fell from 28.8% to 13&ndash;14% against the same nuclear reference.
                 </p>
                 <p>
                   I evaluate segmentation using both image inspection and downstream cell
@@ -281,7 +282,7 @@
                 <div class="work-meta">
                   <span class="tag tag-active">Qiu Lab &middot; In progress</span>
                 </div>
-                <h3>iST upstream model</h3>
+                <h3>Joint spot-calling, decoding, and cell segmentation for imaging-based spatial transcriptomics</h3>
                 <p>
                   I am developing and training a model on public MERFISH data that couples
                   molecular localization and barcode decoding with cell segmentation and
@@ -305,11 +306,12 @@
                   of execution failures and fixes. On MERlin with public MERFISH data, I
                   compared source access alone, contracts, and contracts plus memory across
                   17 tasks and two models. Contracts more than halved failed cluster jobs
-                  for both models tested.
+                  for both models tested and lowered the smaller model's estimated inference
+                  cost by 18%.
                 </p>
                 <p>
                   On the test tasks, reviewed memory reduced failed jobs by a further 84%
-                  and token-based model cost by 16% for the smaller model, compared with
+                  and estimated inference cost by 16% for the smaller model, compared with
                   contracts alone; task success did not differ significantly. I also found
                   that unreviewed memory could retain a silent processing failure as a fix
                   and propagate it to later tasks. I introduced a review stage before
